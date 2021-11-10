@@ -5,6 +5,6 @@ jobs:
         name: message
         runs-on: ubuntu-latest
     steps:
-        - name: Desplegar mensaje
+      - name: Desplegar mensaje
         run: echo mensaje de prueba
 
