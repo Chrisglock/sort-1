@@ -1,0 +1,11 @@
+  name: Periodic Workflow
+  on:
+    schedule:
+        - cron: '30 8 * * 1-5'
+  jobs:
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo ${{ github.repository }}
+            - run: echo ${{ runner.os }}
+            - run: echo ${{ github.workflow }}
